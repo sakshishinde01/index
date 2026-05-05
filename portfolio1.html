@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakshi Shinde Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e47e97, #f3c4fb);
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* change this */
+    gap: 100px; /* control spacing */
+    padding: 60px;
+    margin: 20px;
+    border-radius: 30px;
+
+    background: rgba(230, 190, 190, 0.4);
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 10px 40px rgba(255,182,193,0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+/* TEXT */
+.hero-text h1 {
+    font-size: 55px;
+    font-weight: bold;
+    color: #000;
+}
+
+.hero-text h2 {
+    color: #792443;
+    font-size: 26px;
+}
+
+.hero-text p {
+    max-width: 450px;
+    color: #333;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #a5336c;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(255,105,180,0.5);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGE */
+.hero-img img {
+    width: 280px;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* FLOATING BLOBS */
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,182,193,0.4);
+    filter: blur(40px);
+    animation: float 6s infinite ease-in-out;
+}
+
+.one {
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: -50px;
+}
+
+.two {
+    width: 150px;
+    height: 150px;
+    bottom: -40px;
+    right: -40px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+/* SECTION */
+section {
+    background: rgb(240, 194, 212);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
+section h2 {
+    color: #d1006c;
+    margin-bottom: 10px;
+}
+
+section p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* SKILLS */
+.skill {
+    margin-bottom: 15px;
+}
+
+.bar {
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 10px;
+    background: #0a0747;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    background: #040230;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.socials {
+    margin: 15px 0;
+}
+
+.socials a {
+    margin: 0 10px;
+}
+
+.copy {
+    font-size: 14px;
+    opacity: 0.8;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+
+    <!-- Floating shapes -->
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+
+    <div class="hero-text">
+        <h1>Sakshi Shinde</h1>
+        <h2>Java Developer & Graphic Designer</h2>
+
+        <p>
+            I blend creativity with technology to design beautiful and
+            engaging digital experiences.
+        </p>
+
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="Sakshi Profile.jpg" alt="profile">
+    </div>
+
+</div>
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a Java Developer with a creative edge in Graphic Design. 
+        I enjoy building clean, functional applications while also 
+        designing visually appealing and modern user experiences.
+    </p>
+
+    <p>
+        My passion lies in combining logic with creativity—turning ideas 
+        into both working systems and engaging designs.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <p>Canva</p>
+        <div class="bar"><span style="width:90%"></span></div>
+    </div>
+
+    <div class="skill">
+        <p>Photoshop</p>
+        <div class="bar"><span style="width:75%"></span></div>
+    </div>
+
+    <div class="skill">
+        <p>Illustrator</p>
+        <div class="bar"><span style="width:70%"></span></div>
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+    
+    <h2>Poster Designs</h2>
+<div class="grid">
+    <div class="card">
+    <a href="poster1.png" target="_blank">
+        <img src="poster1.png" width="100%">
+    </a>
+</div>
+    <div class="card">
+         <a href="poster2.png" target="_blank">
+        <img src="poster2.png" width="100%">
+         </a>
+        
+    </div>
+    <div class="card">
+         <a href="poster4.png" target="_blank">
+        <img src="poster4.png" width="100%">
+         </a>
+        
+    </div>
+     <div class="card">
+         <a href="poster3.png" target="_blank">
+        <img src="poster3.png" width="100%">
+         </a>
+        
+    </div>
+</div>
+
+    <h2>Instagram Posts</h2>
+    <div class="grid">
+        <div class="card">
+        <a href="insta1.png" target="_blank">
+        <img src="insta1.png" width="100%">
+        </a>
+        </div>
+        <div class="card">
+    <a href="insta2.png" target="_blank">
+        <img src="insta2.png" width="100%">
+    </a>
+</div>
+        <div class="card">
+    <a href="insta3.png" target="_blank">
+        <img src="insta3.png" width="100%">
+    </a>
+</div>
+    </div>
+
+ 
+
+    <h2>Banner</h2>
+   
+        <div class="card">
+    <a href="banner.png" target="_blank">
+        <img src="banner.png" width="250%">
+    </a>
+</div>
+    
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <h2>Contact Me</h2>
+
+    <p>
+        📧 <a href="mailto:sakshishinde4121@gmail.com">sakshishinde4121@gmail.com</a>
+    </p>
+
+    <div class="socials">
+    <a href="https://www.linkedin.com/in/sakshiii-shinde-253064272" target="_blank"> LinkedIn</a>       
+     <a href="https://www.instagram.com/sakshisshinde01" target="_blank">Instagram</a>
+    </div>
+
+    <p class="copy">© 2026 Sakshi Shinde</p>
+</footer>
+
+</body>
+</html>
